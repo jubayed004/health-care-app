@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -173,3 +174,4 @@ class _CustomTextFieldState extends State<CustomTextField> {
     _obscureText.value = !_obscureText.value;
   }
 }
+*/

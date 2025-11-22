@@ -10,13 +10,13 @@ final ThemeData lightTheme = ThemeData(
     backgroundColor: AppColors.bgColor,
     elevation: 0,
     centerTitle: true,
-    iconTheme: IconThemeData(color: AppColors.brandHoverColor),
+    iconTheme: IconThemeData(color: AppColors.blackColor),
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      backgroundColor: AppColors.brandHoverColor,
+      backgroundColor: AppColors.blueColor900,
       foregroundColor: Colors.white,
-      minimumSize: const Size(186, 48),
+      minimumSize: const Size(100, 40),
       padding: const EdgeInsets.all(10),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
@@ -24,23 +24,23 @@ final ThemeData lightTheme = ThemeData(
       textStyle: const TextStyle(
         fontFamily: AppConfig.fontFamily,
         fontSize: 16,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.w700,
       ),
     ),
   ),
   outlinedButtonTheme: OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      side: const BorderSide(color: AppColors.brandHoverColor, width: 1.5),
+      side: const BorderSide(color: AppColors.blueColor900, width: 1.5),
       foregroundColor: Colors.black,
-      minimumSize: const Size(186, 48),
+      minimumSize: const Size(100, 40),
       padding: const EdgeInsets.all(10),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),
       textStyle: const TextStyle(
         fontFamily: AppConfig.fontFamily,
-        fontSize: 16,
-        fontWeight: FontWeight.w600,
+        fontSize: 14,
+        fontWeight: FontWeight.w700,
       ),
     ),
   ),
@@ -56,22 +56,23 @@ final ThemeData lightTheme = ThemeData(
     ),
   ),
   iconTheme: const IconThemeData(
-    color: AppColors.brandHoverColor,
+    color: AppColors.gray,
   ),
   inputDecorationTheme: InputDecorationTheme(
+
     filled: true,
-    fillColor: AppColors.softBrandColor,
-    iconColor: AppColors.brandHoverColor,
-    prefixIconColor: AppColors.brandHoverColor,
-    suffixIconColor: AppColors.brandHoverColor,
+    fillColor: AppColors.whiteColor,
+    iconColor: AppColors.gray,
+    prefixIconColor: AppColors.gray,
+    suffixIconColor: AppColors.gray,
     contentPadding: const EdgeInsets.symmetric(
-      horizontal: 15,
-      vertical: 14,
+      horizontal: 12,
+      vertical: 8,
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
       borderSide: const BorderSide(
-          color: Colors.transparent
+          color: AppColors.primaryColor
       ),
     ),
     errorBorder: OutlineInputBorder(
@@ -91,13 +92,13 @@ final ThemeData lightTheme = ThemeData(
     disabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
       borderSide: const BorderSide(
-          color: Colors.transparent
+          color: AppColors.primaryColor
       ),
     ),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
       borderSide: const BorderSide(
-          color: Colors.transparent
+          color: AppColors.primaryColor
       ),
     ),
     hintStyle: const TextStyle(

@@ -33,6 +33,9 @@ class $AssetsFontsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/emergency.svg
+  SvgGenImage get emergency => const SvgGenImage('assets/icons/emergency.svg');
+
   /// File path: assets/icons/fromlogo.svg
   SvgGenImage get fromlogo => const SvgGenImage('assets/icons/fromlogo.svg');
 
@@ -48,6 +51,7 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<SvgGenImage> get values => [
+    emergency,
     fromlogo,
     remainderlogo,
     righticon,
