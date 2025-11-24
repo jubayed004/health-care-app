@@ -78,8 +78,12 @@ class _SplashScreenState extends State<SplashScreen> {
       },
     ];
     return Scaffold(
+      appBar: AppBar(
+        title: Text("All Component",style: Theme.of(context).textTheme.titleLarge,)
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
+          padding: EdgeInsets.symmetric(vertical: 24,horizontal: 16),
           child: Center(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -98,7 +102,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   validator: TextFieldValidator.password(),
                 ),*/
                 CustomTextField(
-                  prefixIcon: Icon(Icons.password),
+                  prefixIcon: Icon(Icons.password,),
                   isPassword: true,
                   title: "Password",
                   hintText: "Enter Your PassWord",
@@ -139,7 +143,6 @@ class _SplashScreenState extends State<SplashScreen> {
                      print("Edit: ${medications[index]['name']}");
                    },
                  ),
-        
               ),
         
                 UserProviderCard(
@@ -162,6 +165,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 SizedBox(height: 20.h),
                 LanguageToggle(),
                 EmergencyCard()
+
               ],
             ),
           ),
@@ -216,17 +220,13 @@ class CustomContainer extends StatelessWidget {
               ),
               child: Icon(
                 icon,
-                color: Colors.white,
+                color: Theme.of(context).brightness == Brightness.light? Theme.of(context).iconTheme.color: Colors.cyan
               ),
             ),
             SizedBox(width: 10),
             Text(
               text ?? "",
-              style: TextStyle(
-                color: textColor,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
+              style: Theme.of(context).textTheme.titleMedium,
             ),
           ],
         ),

@@ -101,7 +101,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         return Column(
           children: [
             if(widget.title != null)
-              CustomAlignText(text: widget.title ?? ""),
+              CustomAlignText(text: widget.title ?? "",style: Theme.of(context).textTheme.titleMedium,),
             if(widget.title != null)
               const Gap(8),
             TextFormField(
@@ -138,8 +138,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
                   onTap: toggle,
                   child: Padding(
                     padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
-                    child: obscureText ? const Icon(Icons.visibility_off_outlined, color: AppColors.brandHoverColor,) :
-                    const Icon(Icons.visibility_outlined, color: AppColors.brandHoverColor,),
+                    child: obscureText ? const Icon(Icons.visibility_off_outlined, color: AppColors.gray,) :
+                    const Icon(Icons.visibility_outlined, color: AppColors.gray,),
                   ),
                 ) : widget.suffixIcon,
                 suffixIconColor: widget.suffixIconColor,

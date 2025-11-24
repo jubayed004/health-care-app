@@ -47,8 +47,6 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.light,
         theme: lightTheme,
         darkTheme: darkTheme,
-
-
         //Languages Section
         locale: localizeController.locale,
         translations: Messages(languages: languages),
